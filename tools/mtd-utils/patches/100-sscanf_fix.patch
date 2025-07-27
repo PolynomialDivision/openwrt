@@ -4,7 +4,7 @@
  
  	if (sscanf (line, "%" SCANF_PREFIX "s %c %lo %lu %lu %lu %lu %lu %lu %lu",
  				SCANF_STRING(name), &type, &mode, &uid, &gid, &major, &minor,
--				&start, &increment, &count) < 0)
+-				&start, &increment, &count) < 2)
 +				&start, &increment, &count) < 10)
  	{
  		return 1;
